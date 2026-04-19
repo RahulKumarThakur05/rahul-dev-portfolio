@@ -11,7 +11,7 @@
 
 **Java Backend Developer | Spring Boot Engineer | Cloud & DevOps Practitioner**
 
-[🌐 Live Portfolio](https://your-domain.com) • [💼 LinkedIn](https://www.linkedin.com/in/rahul-kumar-thakur-270050229/) • [💻 GitHub](https://github.com/RahulKumarThakur05) • [📧 Email](mailto:rahulku75564@gmail.com)
+[🌐 Live Portfolio](https://rahuldev.pages.dev/) • [💼 LinkedIn](https://www.linkedin.com/in/rahul-kumar-thakur-270050229/) • [💻 GitHub](https://github.com/RahulKumarThakur05) • [📧 Email](mailto:rahulku75564@gmail.com)
 
 </div>
 
