@@ -22,7 +22,7 @@ const GitHubStats = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        <p className="font-mono text-primary text-sm mb-2">07. GitHub</p>
+        {/* <p className="font-mono text-primary text-sm mb-2">GitHub</p> */}
         <h2 className="section-title">
           Code <span className="gradient-text">Statistics</span>
         </h2>

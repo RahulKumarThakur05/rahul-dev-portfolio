@@ -23,7 +23,7 @@ const AboutSection = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        <p className="font-mono text-primary text-sm mb-2">01. About Me</p>
+        <p className="font-mono text-primary text-sm mb-2">About Me</p>
         <h2 className="section-title">
           Who I <span className="gradient-text">Am</span>
         </h2>

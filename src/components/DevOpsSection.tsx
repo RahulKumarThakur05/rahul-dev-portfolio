@@ -59,7 +59,7 @@ const DevOpsSection = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        <p className="font-mono text-accent text-sm mb-2">06. DevOps & Cloud</p>
+        <p className="font-mono text-accent text-sm mb-2">DevOps & Cloud</p>
         <h2 className="section-title">
           Infrastructure & <span className="gradient-text-accent">Automation</span>
         </h2>

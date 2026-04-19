@@ -49,7 +49,7 @@ const ExperienceSection = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        <p className="font-mono text-primary text-sm mb-2">03. Experience</p>
+        <p className="font-mono text-primary text-sm mb-2">Experience</p>
         <h2 className="section-title">
           Work <span className="gradient-text">History</span>
         </h2>

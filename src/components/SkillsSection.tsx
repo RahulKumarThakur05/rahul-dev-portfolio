@@ -70,7 +70,7 @@ const SkillsSection = () => {
         animate={inView ? { opacity: 1, y: 0 } : {}}
         transition={{ duration: 0.6 }}
       >
-        <p className="font-mono text-primary text-sm mb-2">02. Skills</p>
+        <p className="font-mono text-primary text-sm mb-2">Skills</p>
         <h2 className="section-title">
           Tech <span className="gradient-text">Stack</span>
         </h2>
