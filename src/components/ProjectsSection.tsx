@@ -13,7 +13,6 @@ const projects = [
       "Engineered high-performance REST APIs enabling seamless integration with multiple frontend clients and external systems",
     ],
     tech: ["Java", "Spring Boot", "Spring Security", "REST APIs", "PostgreSQL", "Multi-tenant", "dbdiagram.io"],
-    github: "#",
     live: null,
   },
   {
@@ -26,7 +25,6 @@ const projects = [
       "Developing quality control modules, analytical dashboards, and regulatory compliance reporting features",
     ],
     tech: ["Java", "Spring Boot", "Microservices", "Redis", "MySQL", "Multi-tenant", "Quality Control"],
-    github: "#",
     live: null,
   },
   {
@@ -39,7 +37,6 @@ const projects = [
       "Configured AWS infrastructure for scalability, availability, and secure access",
     ],
     tech: ["Java", "Spring Boot", "MySQL", "MongoDB", "JWT", "Redis", "AWS", "Microservices"],
-    github: "#",
     live: null,
   },
   // {
@@ -91,7 +88,7 @@ const ProjectsSection = () => {
       </motion.div>
 
       <div className="grid md:grid-cols-2 gap-6 mt-10">
-        {projects.map((proj, i) => (
+        {projects?.map((proj, i) => (
           <motion.div
             key={i}
             className="glass-card p-6 flex flex-col group hover:border-primary/30 transition-all duration-300 hover:-translate-y-1"
@@ -102,11 +99,11 @@ const ProjectsSection = () => {
             <div className="flex items-center justify-between mb-4">
               <proj.icon size={28} className="text-primary" />
               <div className="flex gap-3">
-                <a href={proj.github} className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
+                {/* <a href={proj.github} className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
                   <Github size={18} />
-                </a>
+                </a> */}
                 {proj.live && (
-                  <a href={proj.live} className="text-muted-foreground hover:text-primary transition-colors" aria-label="Live demo">
+                  <a href={proj?.live} className="text-muted-foreground hover:text-primary transition-colors" aria-label="Live demo">
                     <ExternalLink size={18} />
                   </a>
                 )}
@@ -114,14 +111,14 @@ const ProjectsSection = () => {
             </div>
 
             <h3 className="font-mono font-bold text-foreground mb-3 group-hover:text-primary transition-colors">
-              {proj.title}
+              {proj?.title}
             </h3>
             <p className="text-sm text-muted-foreground leading-relaxed mb-4">
-              {proj.desc}
+              {proj?.desc}
             </p>
 
             <ul className="space-y-2 mb-5">
-              {proj.highlights.map((h, hi) => (
+              {proj?.highlights?.map((h, hi) => (
                 <li key={hi} className="flex gap-2 text-xs text-secondary-foreground leading-relaxed">
                   <span className="text-primary mt-0.5 shrink-0">▹</span>
                   {h}
@@ -130,7 +127,7 @@ const ProjectsSection = () => {
             </ul>
 
             <div className="flex flex-wrap gap-2 mt-auto">
-              {proj.tech.map((t) => (
+              {proj?.tech?.map((t) => (
                 <span key={t} className="text-xs font-mono px-2.5 py-1 rounded-md bg-secondary text-secondary-foreground">
                   {t}
                 </span>

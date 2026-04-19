@@ -8,6 +8,7 @@ import DevOpsSection from "@/components/DevOpsSection";
 import GitHubStats from "@/components/GitHubStats";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 const Index = () => (
   <div className="min-h-screen bg-background">
@@ -21,6 +22,7 @@ const Index = () => (
     <GitHubStats />
     <ContactSection />
     <Footer />
+    <WhatsAppButton />
   </div>
 );
 

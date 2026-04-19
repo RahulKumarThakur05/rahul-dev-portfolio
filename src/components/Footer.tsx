@@ -1,4 +1,4 @@
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, MessageCircle } from "lucide-react";
 import { config } from "@/config";
 
 const Footer = () => (
@@ -25,6 +25,15 @@ const Footer = () => (
           aria-label="LinkedIn"
         >
           <Linkedin size={18} />
+        </a>
+        <a 
+          href={config.social.whatsapp} 
+          target="_blank" 
+          rel="noopener noreferrer" 
+          className="text-muted-foreground hover:text-green-500 transition-colors" 
+          aria-label="WhatsApp"
+        >
+          <MessageCircle size={18} />
         </a>
         <a 
           href={config.social.email} 

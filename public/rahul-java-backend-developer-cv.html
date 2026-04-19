@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Kumar Thakur - Java Backend Developer - Resume</title>
+    <meta name="description" content="Rahul Kumar Thakur - Java Backend Developer CV with 1+ years of experience in Spring Boot, Microservices, and DevOps">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Calibri', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 850px;
+            margin: 0 auto;
+            padding: 40px 50px;
+            background: white;
+        }
+
+        .header {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            border-bottom: 3px solid #2563eb;
+            padding-bottom: 20px;
+            margin-bottom: 25px;
+        }
+
+        .profile-photo {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #2563eb;
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.25);
+            flex-shrink: 0;
+        }
+
+        .header-content {
+            flex: 1;
+        }
+
+        .header h1 {
+            font-size: 32px;
+            color: #1e40af;
+            margin-bottom: 5px;
+            letter-spacing: 0.5px;
+        }
+
+        .header .subtitle {
+            font-size: 16px;
+            color: #4b5563;
+            font-weight: 500;
+            margin-bottom: 12px;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            font-size: 14px;
+            color: #6b7280;
+        }
+
+        .contact-info a {
+            color: #2563eb;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .contact-info span {
+            padding: 0 8px;
+            border-right: 1px solid #d1d5db;
+        }
+
+        .contact-info span:last-child {
+            border-right: none;
+        }
+
+        h2 {
+            font-size: 18px;
+            color: #1e40af;
+            border-bottom: 2px solid #dbeafe;
+            padding-bottom: 5px;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .section {
+            margin-bottom: 20px;
+        }
+
+        .summary {
+            font-size: 14px;
+            line-height: 1.7;
+            color: #374151;
+            margin-bottom: 20px;
+        }
+
+        .experience-item, .education-item, .project-item {
+            margin-bottom: 20px;
+            page-break-inside: avoid;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 5px;
+        }
+
+        .item-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .item-company {
+            font-size: 14px;
+            color: #2563eb;
+            font-weight: 500;
+        }
+
+        .item-date {
+            font-size: 13px;
+            color: #6b7280;
+            text-align: right;
+            white-space: nowrap;
+        }
+
+        .item-location {
+            font-size: 13px;
+            color: #6b7280;
+            font-style: italic;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 8px;
+        }
+
+        li {
+            font-size: 14px;
+            margin-bottom: 6px;
+            line-height: 1.6;
+            color: #374151;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 150px 1fr;
+            gap: 10px;
+            font-size: 14px;
+        }
+
+        .skill-category {
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .skill-list {
+            color: #374151;
+        }
+
+        .certifications {
+            font-size: 14px;
+        }
+
+        .cert-item {
+            margin-bottom: 8px;
+        }
+
+        .cert-name {
+            font-weight: 600;
+            color: #1f2937;
+        }
+
+        .cert-issuer {
+            color: #6b7280;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 30px;
+            padding-top: 15px;
+            border-top: 1px solid #e5e7eb;
+            font-size: 12px;
+            color: #9ca3af;
+        }
+
+        @media print {
+            body {
+                padding: 20px 40px;
+            }
+            
+            a {
+                color: #1e40af;
+            }
+            
+            .header h1 {
+                color: #1e40af;
+            }
+        }
+        
+        @page {
+            margin: 0.5in;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header with Photo -->
+    <div class="header">
+        <img src="/profile-photo.png" alt="Rahul Kumar Thakur" class="profile-photo">
+        <div class="header-content">
+            <h1>Rahul Kumar Thakur</h1>
+            <div class="subtitle">Java Backend Developer | Spring Boot Engineer | DevOps Practitioner</div>
+            <div class="contact-info">
+                <span>📧 <a href="mailto:rahulku75564@gmail.com">rahulku75564@gmail.com</a></span>
+                <span>📱 +91 6207707617</span>
+                <span>📍 Kolkata, India</span>
+                <span>💼 <a href="https://www.linkedin.com/in/rahul-kumar-thakur-270050229/">LinkedIn</a></span>
+                <span>💻 <a href="https://github.com/RahulKumarThakur05">GitHub</a></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Professional Summary -->
+    <div class="section">
+        <h2>Professional Summary</h2>
+        <p class="summary">
+            Java Backend Developer with 1+ year of experience independently owning and delivering enterprise-grade Java backend solutions. Specialized in microservices architecture, API optimization, and database performance tuning with proven track record of maintaining 99.9% system uptime. Expertise in Spring Boot, RESTful APIs, Redis caching, and query optimization. Currently expanding into AWS, Docker, Kubernetes, and advanced CI/CD automation to become a full-stack Backend + DevOps engineer capable of architecting, building, and deploying cloud-native systems at scale.
+        </p>
+    </div>
+
+    <!-- Technical Skills -->
+    <div class="section">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">Languages:</div>
+            <div class="skill-list">Java (Core + Advanced), SQL, JavaScript, HTML/CSS</div>
+
+            <div class="skill-category">Frameworks:</div>
+            <div class="skill-list">Spring Boot, Spring MVC, Spring Security, Spring Data JPA, Hibernate ORM</div>
+
+            <div class="skill-category">Databases:</div>
+            <div class="skill-list">MySQL, PostgreSQL, MongoDB, Oracle, Redis (Caching)</div>
+
+            <div class="skill-category">Cloud & DevOps:</div>
+            <div class="skill-list">AWS (EC2, S3, IAM), Docker, Kubernetes, CI/CD (Jenkins, GitHub Actions), Git, Linux/Shell</div>
+
+            <div class="skill-category">Frontend:</div>
+            <div class="skill-list">React, HTML5, CSS3, Bootstrap, JavaScript</div>
+
+            <div class="skill-category">Tools & Practices:</div>
+            <div class="skill-list">Maven, Gradle, Postman, Swagger, dbdiagram.io, IntelliJ IDEA, Microservices Architecture, Agile/Scrum</div>
+        </div>
+    </div>
+
+    <!-- Professional Experience -->
+    <div class="section">
+        <h2>Professional Experience</h2>
+        
+        <div class="experience-item">
+            <div class="item-header">
+                <div>
+                    <div class="item-title">Software Engineer (Associate – G2)</div>
+                    <div class="item-company">Mactix Global Solutions</div>
+                </div>
+                <div class="item-date">Jan 2026 - Present</div>
+            </div>
+            <div class="item-location">Kolkata, India</div>
+            <ul>
+                <li>Sole backend developer independently owning Java and Spring Boot–based enterprise applications end-to-end</li>
+                <li>Independently designed system architecture, RESTful APIs, and database schemas from scratch</li>
+                <li>Optimized database queries and indexes to improve response times and system throughput</li>
+                <li>Managed CI/CD pipelines and deployment workflows autonomously</li>
+                <li>Drove system design decisions, debugging, and performance tuning with full accountability</li>
+            </ul>
+        </div>
+
+        <div class="experience-item">
+            <div class="item-header">
+                <div>
+                    <div class="item-title">Software Developer</div>
+                    <div class="item-company">Vais Engineering Pvt. Ltd.</div>
+                </div>
+                <div class="item-date">Oct 2024 - Oct 2025</div>
+            </div>
+            <div class="item-location">Kolkata, India</div>
+            <ul>
+                <li>Sole owner of end-to-end backend delivery — gathered requirements, designed system architecture, and led technical execution independently</li>
+                <li>Designed relational and NoSQL schemas in MySQL and MongoDB using dbdiagram.io; implemented query optimization, indexing strategies, and Redis caching</li>
+                <li>Built all backend services using Java, Spring Boot, and Microservices with clean code and modular architecture</li>
+                <li>Developed secure RESTful APIs with Spring Security and OAuth2; resolved N+1 query issues and reduced average API response time significantly</li>
+                <li>Sole developer integrating Razorpay payment gateway for secure online transaction handling</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Key Projects -->
+    <div class="section">
+        <h2>Key Projects</h2>
+        
+        <div class="project-item">
+            <div class="item-header">
+                <div>
+                    <div class="item-title">HMIS (Healthcare Management Information System)</div>
+                </div>
+                <div class="item-date">2025 - 2026</div>
+            </div>
+            <ul>
+                <li>Designed entire PostgreSQL schema using dbdiagram.io with normalization, indexing, and query optimization for multi-tenant architecture</li>
+                <li>Implemented multi-tenant role-based authentication with Spring Security to protect sensitive patient data across facilities</li>
+                <li>Engineered high-performance REST APIs enabling seamless integration with multiple frontend clients and external systems</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <div class="item-header">
+                <div>
+                    <div class="item-title">School Management SaaS (Microservices)</div>
+                </div>
+                <div class="item-date">2025</div>
+            </div>
+            <ul>
+                <li>Designed MySQL and MongoDB schemas using dbdiagram.io with indexing strategies and Redis caching</li>
+                <li>Implemented RBAC for Admin, Faculty, Student, Accountant, and Librarian roles with Spring Security and JWT</li>
+                <li>Configured AWS infrastructure for scalability, availability, and secure access</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <div class="item-header">
+                <div>
+                    <div class="item-title">LIMS (Laboratory Information Management System) — In Progress</div>
+                </div>
+                <div class="item-date">2026</div>
+            </div>
+            <ul>
+                <li>Building multi-tenant architecture supporting multiple laboratories with isolated data and role-based access control</li>
+                <li>Implementing comprehensive test catalog management, sample tracking, and automated result processing workflows</li>
+                <li>Developing quality control modules, analytical dashboards, and regulatory compliance reporting features</li>
+            </ul>
+        </div>
+
+        <div class="project-item">
+            <div class="item-header">
+                <div>
+                    <div class="item-title">Text-to-Speech Converter</div>
+                </div>
+                <div class="item-date">2026</div>
+            </div>
+            <ul>
+                <li>Built file upload system supporting multiple text formats with real-time text extraction and processing</li>
+                <li>Integrated speech synthesis engine with configurable voice, pitch, speed, and language settings</li>
+                <li>Developed audio playback controls with pause, resume, and stop functionality for seamless user experience</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Education -->
+    <div class="section">
+        <h2>Education</h2>
+        
+        <div class="education-item">
+            <div class="item-header">
+                <div>
+                    <div class="item-title">Bachelor of Technology in Computer Science</div>
+                </div>
+                <div class="item-date">Graduated 2024</div>
+            </div>
+            <div class="item-location">Tamil Nadu, India</div>
+            <ul>
+                <li>Specialized in software engineering, database management, and cloud computing</li>
+                <li>Built foundation in Java programming, data structures, and system design</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Certifications & Learning -->
+    <div class="section">
+        <h2>Certifications & Learning</h2>
+        <div class="certifications">
+            <div class="cert-item">
+                <span class="cert-name">AWS Cloud Practitioner & Java Development</span> - 
+                <span class="cert-issuer">Professional Training & Certifications</span>
+            </div>
+            <div class="cert-item">
+                <span class="cert-name">DevOps & Cloud Engineering</span> - 
+                <span class="cert-issuer">Currently pursuing Docker, Kubernetes, and advanced CI/CD automation</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Additional Information -->
+    <div class="section">
+        <h2>Additional Information</h2>
+        <ul>
+            <li><strong>Languages:</strong> English (Professional), Hindi (Native)</li>
+            <li><strong>Availability:</strong> Open to full-time, contract, and freelance opportunities</li>
+            <li><strong>Work Preference:</strong> Remote, Hybrid, or On-site positions in India</li>
+            <li><strong>Portfolio:</strong> <a href="https://rahul-s-tech-journey.vercel.app">rahul-s-tech-journey.vercel.app</a></li>
+            <li><strong>Key Achievements:</strong> 99.9% System Uptime · 40% Deployment Speed Improvement · Sole Developer Across All Projects</li>
+        </ul>
+    </div>
+
+    <div class="footer-note">
+        References available upon request
+    </div>
+</body>
+</html>

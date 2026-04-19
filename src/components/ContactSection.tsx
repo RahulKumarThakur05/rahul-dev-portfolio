@@ -1,19 +1,11 @@
 import { motion, useInView } from "framer-motion";
-import { useRef, useState } from "react";
-import { Mail, Linkedin, Github, Send } from "lucide-react";
+import { useRef } from "react";
+import { Mail, Linkedin, Github, MessageCircle } from "lucide-react";
 import { config } from "@/config";
 
 const ContactSection = () => {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true, margin: "-100px" });
-  const [form, setForm] = useState({ name: "", email: "", message: "" });
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Would integrate with backend
-    alert("Thanks for reaching out! I'll get back to you soon.");
-    setForm({ name: "", email: "", message: "" });
-  };
 
   return (
     <section id="contact" className="section-container" ref={ref}>
@@ -44,7 +36,7 @@ const ContactSection = () => {
             <div>
               <p className="text-sm text-muted-foreground">Email</p>
               <a href={config.social.email} className="text-foreground font-medium text-sm hover:text-primary transition-colors">
-                {config.email}
+                Click to send email
               </a>
             </div>
           </div>
@@ -52,57 +44,63 @@ const ContactSection = () => {
             <Linkedin className="text-primary shrink-0" size={22} />
             <div>
               <p className="text-sm text-muted-foreground">LinkedIn</p>
-              <p className="text-foreground font-medium text-sm">www.linkedin.com/in/rahul-kumar-thakur-270050229</p>
+              <p className="text-foreground font-medium text-sm">View LinkedIn Profile</p>
             </div>
           </a>
           <a href={config.social.github} target="_blank" rel="noopener noreferrer" className="glass-card p-5 flex items-center gap-4 hover:border-primary/30 transition-colors block">
             <Github className="text-primary shrink-0" size={22} />
             <div>
               <p className="text-sm text-muted-foreground">GitHub</p>
-              <p className="text-foreground font-medium text-sm">www.github.com/RahulKumarThakur05</p>
+              <p className="text-foreground font-medium text-sm">View GitHub Profile</p>
+            </div>
+          </a>
+          <a href={config.social.whatsapp} target="_blank" rel="noopener noreferrer" className="glass-card p-5 flex items-center gap-4 hover:border-primary/30 transition-colors block">
+            <MessageCircle className="text-primary shrink-0" size={22} />
+            <div>
+              <p className="text-sm text-muted-foreground">WhatsApp</p>
+              <p className="text-foreground font-medium text-sm">Chat on WhatsApp</p>
             </div>
           </a>
         </motion.div>
 
-        <motion.form
-          onSubmit={handleSubmit}
+        <motion.div
           initial={{ opacity: 0, x: 30 }}
           animate={inView ? { opacity: 1, x: 0 } : {}}
           transition={{ duration: 0.5, delay: 0.3 }}
-          className="glass-card p-6 space-y-4"
+          className="glass-card p-6 space-y-6"
         >
-          <input
-            type="text"
-            placeholder="Your Name"
-            value={form.name}
-            onChange={(e) => setForm({ ...form, name: e.target.value })}
-            required
-            className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary/50 transition-colors"
-          />
-          <input
-            type="email"
-            placeholder="Your Email"
-            value={form.email}
-            onChange={(e) => setForm({ ...form, email: e.target.value })}
-            required
-            className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary/50 transition-colors"
-          />
-          <textarea
-            placeholder="Your Message"
-            rows={4}
-            value={form.message}
-            onChange={(e) => setForm({ ...form, message: e.target.value })}
-            required
-            className="w-full bg-secondary border border-border rounded-lg px-4 py-3 text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-primary/50 transition-colors resize-none"
-          />
-          <button
-            type="submit"
-            className="w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-lg font-medium text-sm bg-primary text-primary-foreground hover:opacity-90 transition-opacity glow-primary"
+          <h3 className="text-xl font-semibold mb-4">Quick Contact</h3>
+          <p className="text-muted-foreground text-sm mb-6">
+            Prefer a direct conversation? Click below to send me an email or connect on WhatsApp!
+          </p>
+          
+          <a
+            href={`mailto:${config.email}?subject=Hello%20Rahul!&body=Hi%20Rahul,%0D%0A%0D%0AI%20came%20across%20your%20portfolio%20and%20would%20like%20to%20connect%20with%20you.%0D%0A%0D%0ABest%20regards`}
+            className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 rounded-lg font-medium text-sm bg-primary text-primary-foreground hover:opacity-90 transition-opacity glow-primary"
           >
-            <Send size={16} />
-            Send Message
-          </button>
-        </motion.form>
+            <Mail size={16} />
+            Send Email
+          </a>
+          
+          <a
+            href={config.social.whatsapp}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center justify-center gap-2 w-full px-6 py-3 rounded-lg font-medium text-sm border-2 border-primary text-primary hover:bg-primary/10 transition-colors"
+          >
+            <MessageCircle size={16} />
+            WhatsApp Me
+          </a>
+          
+          <div className="pt-4 border-t border-border">
+            <p className="text-xs text-muted-foreground text-center">
+              Prefer direct email?{" "}
+              <a href={config.social.email} className="text-primary hover:underline">
+                Click here to email
+              </a>
+            </p>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
