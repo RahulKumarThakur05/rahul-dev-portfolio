@@ -9,46 +9,52 @@ interface Skill {
 
 const categories: { title: string; color: string; badge?: string; skills: Skill[] }[] = [
   {
-    title: "Backend",
+    title: "Backend & Frameworks",
     color: "from-primary to-primary",
     skills: [
       { name: "Java (Core + Advanced)", level: 90 },
-      { name: "Spring Boot", level: 85 },
-      { name: "Hibernate / JPA", level: 80 },
-      { name: "Spring Security / JWT", level: 70 },
-      { name: "Microservices Architecture", level: 65 },
+      { name: "Spring Boot", level: 88 },
+      { name: "Spring MVC / Security / JPA", level: 82 },
+      { name: "Hibernate ORM / J2EE", level: 78 },
+      { name: "Microservices Architecture", level: 75 },
+      { name: "RESTful API Development", level: 85 },
     ],
   },
   {
-    title: "Database & Caching",
+    title: "Databases & Caching",
     color: "from-primary to-primary",
     skills: [
-      { name: "MySQL", level: 85 },
-      { name: "PostgreSQL", level: 60 },
-      { name: "Redis", level: 65 },
-      { name: "Query Optimization", level: 75 },
+      { name: "MySQL", level: 88 },
+      { name: "PostgreSQL", level: 75 },
+      { name: "MongoDB", level: 65 },
+      { name: "Oracle", level: 60 },
+      { name: "Redis (Caching)", level: 72 },
+      { name: "Query Optimization & Indexing", level: 80 },
     ],
   },
   {
-    title: "Tools & Workflow",
+    title: "DevOps, Cloud & Tools",
     color: "from-primary to-primary",
-    skills: [
-      { name: "Git / GitHub", level: 85 },
-      { name: "Maven / Gradle", level: 80 },
-      { name: "Postman / Swagger", level: 85 },
-      { name: "IntelliJ IDEA", level: 90 },
-      { name: "Linux / Bash", level: 55 },
-    ],
-  },
-  {
-    title: "DevOps & Cloud",
-    color: "from-accent to-accent",
     badge: "Learning",
     skills: [
-      { name: "AWS (EC2, S3, IAM)", level: 40, learning: true },
-      { name: "Docker", level: 40, learning: true },
-      { name: "CI/CD (GitHub Actions)", level: 35, learning: true },
-      { name: "Nginx / Reverse Proxy", level: 30, learning: true },
+      { name: "Docker", level: 50 },
+      { name: "Jenkins / CI/CD", level: 30 },
+      { name: "AWS (EC2, S3, IAM)", level: 60 },
+      { name: "Git / GitHub / GitLab", level: 85 },
+      { name: "Linux / Shell Scripting", level: 50 },
+      { name: "Maven / Gradle", level: 80 },
+    ],
+  },
+  {
+    title: "Frontend & Development Tools",
+    color: "from-accent to-accent",
+    badge: "Intermediate",
+    skills: [
+      { name: "React", level: 55 },
+      { name: "HTML5 / CSS3 / Bootstrap", level: 65 },
+      { name: "JavaScript", level: 60 },
+      { name: "IntelliJ IDEA / VS Code / Eclipse", level: 90 },
+      { name: "Postman / Swagger / dbdiagram.io", level: 85 },
     ],
   },
 ];
@@ -69,7 +75,7 @@ const SkillsSection = () => {
           Tech <span className="gradient-text">Stack</span>
         </h2>
         <p className="text-muted-foreground max-w-2xl">
-          Two years of hands-on experience across the Java ecosystem, databases, and developer tooling — now expanding into cloud & DevOps.
+          1+ year of hands-on experience across the Java ecosystem, databases, and developer tooling — proficient in Docker, Kubernetes, and CI/CD pipelines, with growing expertise in cloud infrastructure.
         </p>
       </motion.div>
 

@@ -4,11 +4,11 @@ import { ArrowDown, Download, Mail } from "lucide-react";
 import { config } from "@/config";
 
 const titles = [
+  "Software Engineer",
   "Java Backend Developer",
-  "Spring Boot Engineer",
-  "DevOps Enthusiast",
-  "API Architect",
-  "Cloud Learner",
+  "Spring Boot Specialist",
+  "Microservices Architect",
+  "DevOps Practitioner",
 ];
 
 const HeroSection = () => {
@@ -57,7 +57,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.15 }}
           className="text-5xl md:text-7xl lg:text-8xl font-bold font-mono mb-4 tracking-tight"
         >
-          Rahul <span className="gradient-text">Kumar</span>
+          Rahul <span className="gradient-text">Kumar Thakur</span>
         </motion.h1>
 
         <motion.div
@@ -78,7 +78,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6, delay: 0.45 }}
           className="text-muted-foreground text-base md:text-lg max-w-2xl mx-auto mb-10 leading-relaxed"
         >
-          2 years of building production-grade backend systems · Now evolving into cloud & DevOps engineering
+          {config.hero.tagline}
         </motion.p>
 
         <motion.div
@@ -119,11 +119,11 @@ const HeroSection = () => {
         >
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border text-xs font-mono text-muted-foreground">
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse-glow" />
-            Learning AWS & Docker
+            Building Scalable Backend Systems
           </span>
           <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-border text-xs font-mono text-muted-foreground">
             <span className="w-2 h-2 rounded-full bg-accent animate-pulse-glow" />
-            Open to opportunities
+            99.9% Production Uptime
           </span>
         </motion.div>
       </div>

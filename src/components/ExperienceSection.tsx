@@ -4,39 +4,38 @@ import { Briefcase } from "lucide-react";
 
 const experiences = [
   {
-    title: "Java Backend Developer",
-    company: "Current Organization",
-    period: "2023 – Present",
+    title: "Software Engineer (Associate – G2)",
+    company: "Mactix Global Solutions",
+    period: "Jan 2026 – Present",
     current: true,
     points: [
-      "Lead backend development for HMIS/LMIS platforms handling 10,000+ daily transactions across healthcare and logistics operations",
-      "Architected and built 50+ RESTful APIs with Spring Boot, consumed by web and mobile clients in production",
-      "Implemented Redis caching layer that reduced API response times by 40% and cut database load significantly",
-      "Designed normalized database schemas and optimized complex SQL queries, improving report generation speed by 3x",
-      "Integrated Spring Security with JWT-based authentication and role-based access control for multi-tenant environments",
-      "Participated in code reviews, mentored junior developers, and contributed to architecture decisions",
+      "Sole backend developer independently owning Java and Spring Boot–based enterprise applications end-to-end",
+      "Independently designed system architecture, RESTful APIs, and database schemas from scratch",
+      "Optimized database queries and indexes to improve response times and system throughput",
+      "Managed CI/CD pipelines and deployment workflows autonomously",
+      "Drove system design decisions, debugging, and performance tuning with full accountability",
     ],
   },
   {
-    title: "Java Developer (Junior)",
-    company: "Previous Organization",
-    period: "2022 – 2023",
+    title: "Software Developer",
+    company: "Vais Engineering Pvt. Ltd.",
+    period: "Oct 2024 – Oct 2025",
     current: false,
     points: [
-      "Built internal tools and CRUD APIs using Spring Boot and Hibernate, serving 500+ daily active users",
-      "Developed automated data processing modules that replaced manual workflows, saving 15+ hours/week",
-      "Collaborated in Agile sprints with cross-functional teams, consistently delivering features on schedule",
-      "Wrote unit and integration tests with JUnit and Mockito, maintaining 80%+ code coverage",
-      "Gained deep understanding of Java OOP, design patterns, and clean code principles",
+      "Sole owner of end-to-end backend delivery — gathered requirements, designed system architecture, and led technical execution independently",
+      "Designed relational and NoSQL schemas in MySQL and MongoDB using dbdiagram.io; implemented query optimization, indexing strategies, and Redis caching",
+      "Built all backend services using Java, Spring Boot, and Microservices with clean code and modular architecture",
+      "Developed secure RESTful APIs with Spring Security and OAuth2; resolved N+1 query issues and reduced average API response time significantly",
+      "Sole developer integrating Razorpay payment gateway for secure online transaction handling",
     ],
   },
 ];
 
 const metrics = [
-  { value: "2+", label: "Years Experience" },
-  { value: "50+", label: "APIs Built" },
-  { value: "40%", label: "Latency Reduced" },
-  { value: "10K+", label: "Daily Transactions" },
+  { value: "1+", label: "Year Experience" },
+  { value: "99.9%", label: "System Uptime" },
+  { value: "40%", label: "Deployment Speed Improved" },
+  { value: "100%", label: "Sole Developer" },
 ];
 
 const ExperienceSection = () => {

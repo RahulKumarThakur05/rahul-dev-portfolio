@@ -23,12 +23,12 @@ const ContactSection = () => {
         transition={{ duration: 0.6 }}
         className="text-center mb-10"
       >
-        <p className="font-mono text-primary text-sm mb-2">07. Contact</p>
+        <p className="font-mono text-primary text-sm mb-2">08. Contact</p>
         <h2 className="section-title">
           Get In <span className="gradient-text">Touch</span>
         </h2>
         <p className="text-muted-foreground max-w-lg mx-auto">
-          I'm open to new opportunities, collaborations, or just a friendly conversation about backend systems and DevOps.
+          I'm open to new opportunities, collaborations, or just a friendly conversation about backend systems, microservices architecture, and DevOps engineering.
         </p>
       </motion.div>
 
@@ -48,18 +48,18 @@ const ContactSection = () => {
               </a>
             </div>
           </div>
-          <a href={config.social.linkedin} target="_blank" rel="noopener noreferrer" className="glass-card p-5 flex items-center gap-4 hover:border-primary/30 transition-colors block">
+                   <a href={config.social.linkedin} target="_blank" rel="noopener noreferrer" className="glass-card p-5 flex items-center gap-4 hover:border-primary/30 transition-colors block">
             <Linkedin className="text-primary shrink-0" size={22} />
             <div>
               <p className="text-sm text-muted-foreground">LinkedIn</p>
-              <p className="text-foreground font-medium text-sm">linkedin.com/in/rahulkumar</p>
+              <p className="text-foreground font-medium text-sm">www.linkedin.com/in/rahul-kumar-thakur-270050229</p>
             </div>
           </a>
           <a href={config.social.github} target="_blank" rel="noopener noreferrer" className="glass-card p-5 flex items-center gap-4 hover:border-primary/30 transition-colors block">
             <Github className="text-primary shrink-0" size={22} />
             <div>
               <p className="text-sm text-muted-foreground">GitHub</p>
-              <p className="text-foreground font-medium text-sm">github.com/rahulkumar</p>
+              <p className="text-foreground font-medium text-sm">www.github.com/RahulKumarThakur05</p>
             </div>
           </a>
         </motion.div>

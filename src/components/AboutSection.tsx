@@ -4,12 +4,12 @@ import { useRef } from "react";
 import { Server, Database, Cloud, Zap, Shield, Layers } from "lucide-react";
 
 const highlights = [
-  { icon: Server, label: "Backend Architecture", desc: "Microservices & Monoliths" },
-  { icon: Database, label: "Database Engineering", desc: "Schema Design & Optimization" },
-  { icon: Cloud, label: "Cloud & DevOps", desc: "AWS, Docker, CI/CD" },
-  { icon: Zap, label: "Performance Tuning", desc: "40%+ Latency Reduction" },
+  { icon: Server, label: "End-to-End Ownership", desc: "Sole Developer Across All Projects" },
+  { icon: Database, label: "Database Engineering", desc: "MySQL, PostgreSQL, MongoDB, Redis" },
+  { icon: Cloud, label: "Cloud & DevOps", desc: "AWS, Docker, Kubernetes, CI/CD" },
+  { icon: Zap, label: "Performance Tuning", desc: "40% Deployment Speed Improvement" },
   { icon: Shield, label: "API Security", desc: "JWT, OAuth2, Spring Security" },
-  { icon: Layers, label: "System Integration", desc: "REST, Messaging, Caching" },
+  { icon: Layers, label: "System Reliability", desc: "99.9% Production Uptime" },
 ];
 
 const AboutSection = () => {
@@ -37,16 +37,16 @@ const AboutSection = () => {
           transition={{ duration: 0.6, delay: 0.2 }}
         >
           <p className="text-secondary-foreground leading-relaxed">
-            I'm a <span className="text-primary font-semibold">Java Backend Developer</span> with <span className="text-primary font-semibold">2 years</span> of production experience designing, building, and maintaining enterprise-grade systems. I've been a core contributor to <span className="text-primary font-semibold">HMIS and LMIS platforms</span> — mission-critical healthcare and logistics systems processing thousands of transactions daily.
+            I'm a <span className="text-primary font-semibold">Software Engineer</span> specializing in <span className="text-primary font-semibold">Java Backend Development</span> with <span className="text-primary font-semibold">1+ year</span> of production experience. I've worked as a <span className="text-primary font-semibold">sole developer</span> across all projects — independently owning the full lifecycle from requirement analysis and architecture design to production deployment and maintenance.
           </p>
           <p className="text-secondary-foreground leading-relaxed">
-            My expertise spans <span className="text-primary font-semibold">Spring Boot, Hibernate, and microservice architectures</span>. I've designed RESTful APIs consumed by multiple frontend clients, implemented <span className="text-primary font-semibold">Redis-based caching strategies</span> that cut response times by 40%, and built complex business logic handling real-time data flows, role-based access, and multi-tenant environments.
+            My expertise spans <span className="text-primary font-semibold">Spring Boot, microservices architecture, and database optimization</span>. I've designed RESTful APIs with Spring Security and OAuth2, implemented <span className="text-primary font-semibold">Redis caching and query indexing strategies</span> that improved deployment speed by 40%, and maintained <span className="text-primary font-semibold">99.9% system uptime</span> across enterprise healthcare (HMIS) and education (School Management SaaS) platforms.
           </p>
           <p className="text-secondary-foreground leading-relaxed">
-            Beyond writing code, I take ownership — from <span className="text-primary font-semibold">database schema design and query optimization</span> to API documentation and code reviews. I've mentored junior developers and actively participate in architecture decisions.
+            Beyond writing code, I take <span className="text-primary font-semibold">complete ownership</span> — from database schema modeling using dbdiagram.io, to API documentation with Postman, to CI/CD pipeline management and AWS deployment. I've independently designed system architectures, optimized N+1 query issues, added composite indexes, and integrated payment gateways like Razorpay.
           </p>
           <p className="text-secondary-foreground leading-relaxed">
-            Now I'm expanding into <span className="text-accent font-semibold">AWS, Docker, and CI/CD pipelines</span> — with a clear goal to become a full-stack Backend + DevOps engineer who can architect, build, <em>and</em> deploy cloud-native systems at scale.
+            Currently expanding into <span className="text-accent font-semibold">AWS, Docker, Kubernetes, and advanced CI/CD automation</span> — with a clear goal to become a full-stack Backend + DevOps engineer who can architect, build, <em>and</em> deploy cloud-native systems at scale.
           </p>
         </motion.div>
 
